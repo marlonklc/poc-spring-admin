@@ -1,0 +1,4 @@
+management.security.enabled=true
+security.user.name=user
+security.user.password=pwd123
+

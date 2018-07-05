@@ -1,4 +1,4 @@
-package br.gov.badesc.admin;
+package com.example.admin;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

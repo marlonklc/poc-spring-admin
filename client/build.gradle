@@ -1,6 +1,7 @@
 buildscript {
   ext {
     springBootVersion = '1.5.10.RELEASE'
+    springBootAdminVersion = '1.5.7'
   }
   repositories {
     mavenCentral()
@@ -22,16 +23,12 @@ repositories {
   mavenCentral()
 }
 
-
-ext {
-  springBootAdminVersion = '1.5.7'
-}
-
 dependencies {
-  compile('org.springframework.boot:spring-boot-starter-web')
-  compile('de.codecentric:spring-boot-admin-starter-client')
-  compile "de.codecentric:spring-boot-admin-starter-client:1.5.7"
-  testCompile('org.springframework.boot:spring-boot-starter-test')
+  compile "org.springframework.boot:spring-boot-starter-actuator"
+  compile "de.codecentric:spring-boot-admin-starter-client"
+  compile "org.springframework.boot:spring-boot-starter-security"
+
+  testCompile "org.springframework.boot:spring-boot-starter-test"
 }
 
 dependencyManagement {

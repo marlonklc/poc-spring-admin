@@ -16,7 +16,7 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-group = 'br.gov.badesc.admin'
+group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
@@ -25,9 +25,11 @@ repositories {
 }
 
 dependencies {
-  compile('org.springframework.boot:spring-boot-starter-web')
-  compile('de.codecentric:spring-boot-admin-starter-server')
-  testCompile('org.springframework.boot:spring-boot-starter-test')
+  compile "de.codecentric:spring-boot-admin-starter-server"
+  compile "org.springframework.boot:spring-boot-starter-security"
+  compile "de.codecentric:spring-boot-admin-server-ui-login"
+
+  testCompile "org.springframework.boot:spring-boot-starter-test"
 }
 
 dependencyManagement {

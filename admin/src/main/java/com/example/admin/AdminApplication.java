@@ -1,4 +1,4 @@
-package br.gov.badesc.admin;
+package com.example.admin;
 
 import de.codecentric.boot.admin.config.EnableAdminServer;
 import org.springframework.boot.SpringApplication;
